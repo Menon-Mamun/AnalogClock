@@ -1,0 +1,107 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    color:whitesmoke ; 
+
+} 
+body{
+    min-height: 100vh;  
+  min-width: 420px;
+    background-color: #2C3A47;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+ 
+
+
+}  
+
+.container{
+    position: relative;  
+ 
+   
+}
+img{
+    width: 35vw; 
+    height: 20vw;
+    border-radius: 50%; 
+}
+
+.clock
+{
+    width: 300px; 
+    height: 300px; 
+    background-color: rgb(8, 10, 10);  
+
+    border: 5px solid rgb(68, 68, 54); 
+    box-shadow: 1px 5px  30px rgb(121, 121, 112);  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   border-radius: 50%;  
+   outline: 2px solid burlywood;
+
+}
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg*var(--i))); 
+
+    inset: 12px; 
+    text-align: center;
+
+
+
+ } 
+ .clock span b{
+    position: absolute; 
+    transform: rotate(calc(-30deg*var(--i))); 
+    display: inline-block;
+
+ } 
+ .clock::before{
+    content: ''; 
+    position: absolute;
+    width: 8px; 
+    height: 8px;  
+    border-radius: 50%;
+    background-color: white; 
+    z-index: 2;
+ }  
+.hand{
+    position: absolute;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-end;
+}
+
+
+
+
+
+ .hand i { 
+    position: absolute;
+    width: 4px; 
+    height: 70px; 
+    background-color:var(--color);
+    border-radius: 8px;
+} 
+@media screen  and (max-width:520px) {
+    
+    img{
+       
+    height: 75vw;
+    width: 80vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+}
